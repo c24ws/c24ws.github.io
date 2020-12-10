@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		p{
+			font-family:courier;
+			font-size:40px;
+		}
+
+		#blank{
+			font-family:courier;
+			font-size:40px;
+			border:1px dotted black;
+			width:600px;
+			height:200px;
+			color:orange;
+
+		}
+		#joke{
+			width:500px;
+			height:800px;
+			background-image: cover
+			background-repeat:no-repeat;
+		}
+	</style>
+</head>
+<body>
+<div id="blank"><p> Click this for a cringy surprise!</p></div>
+<div id="joke">
+
+<script type="text/javascript">
+	
+	var array = [
+"url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/thanksgiving-jokes-1568997242.png?crop=1xw:1xh;center,top&resize=480:*)",
+"url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gh-thanksgiving-quotes-1-1568997295.png?crop=1xw:1xh;center,top&resize=480:*)",
+"url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/thanksgiving-jokes-arthur-any-leftovers-1596900684.jpg?crop=1xw:1xh;center,top&resize=480:*)"
+	
+];	
+
+	var box = document.getElementById("blank");
+	var joke = document.getElementById("joke");
+	box.addEventListener("click",
+function() {
+var x = Math.round(Math.random()*2)
+	joke.style.backgroundImage = array[x];
+
+}
+		);
+
+
+</script>
+
+
+</body>
+</html>
